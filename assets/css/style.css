@@ -32,6 +32,7 @@ h6 {
 
 a {
   text-decoration: underline;
+  color: #113972;
 }
 
 a:hover,
@@ -197,15 +198,16 @@ a.link-unstylef:active {
   text-decoration: underline;
 }
 
-.slideshow {
-  background-color: dodgerblue;
-  color: white;
-  height: 300px;
+.home-main {
+  padding: 40px 10px;
+  padding-top: 0;
 }
 
-.home-main {
-  padding: 40px 0;
-  padding-top: 0;
+@media (min-width: 768px) {
+  .home-main {
+    padding: 40px 0;
+    padding-top: 0;
+  }
 }
 
 .articles-list {
@@ -232,7 +234,8 @@ a.link-unstylef:active {
   background-position: center;
 }
 
-.article-excerpt {
+.article-excerpt,
+.article-content {
   text-align: justify;
 }
 
@@ -400,10 +403,16 @@ a.link-unstylef:active {
 .social-box {
   background-color: #113972;
   color: #FFF;
-  padding: 30px 0;
+  padding: 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .social-box {
+    padding: 30px 0;
+  }
 }
 
 .social-icon-link {
@@ -439,4 +448,12 @@ a.link-unstylef:active {
 
 .activity-title {
   margin-bottom: 30px;
+}
+
+.breadcrumbs-container {
+  padding: 20px 0;
+}
+
+.recent-post-slider .wp-post-date::after {
+  background: #3a7fe2;
 }

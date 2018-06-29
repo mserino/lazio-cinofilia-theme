@@ -1,5 +1,5 @@
 # Lazio Cinofilia WordPress Theme
-Theme created based on Custom WordPress Theme by [Maggie Serino](https://www.maggieserino.com)
+Theme created based on Custom WordPress Theme by [Maggie Serino](https://www.maggieserino.com)  
 This Theme boilerplate works with [WordPress](https://wordpress.org/)
 
 Visit the website at [www.sslaziocinofilia.com](http://www.sslaziocinofilia.com)

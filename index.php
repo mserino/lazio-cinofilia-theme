@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<!-- <section class="slideshow">
-  SLIDESHOW PLACEHOLDER
-</section> -->
+<section class="slideshow">
+  <?php echo do_shortcode( '[recent_post_slider design="design-3" show_category_name="false"]' ); ?>
+</section>
 
 <!-- Social Icons -->
 <?php get_template_part('template-parts/content', 'social'); ?>
@@ -25,7 +25,7 @@
           <?php while ( $homepage_query->have_posts() ) : $homepage_query->the_post(); ?>
             <li class="article drop-shadow">
               <h4><?php the_title(); ?></h4>
-              <span class="article-date label"><?php the_time('F jS, Y'); ?></span>
+              <span class="article-date label"><?php the_time('j F Y'); ?></span>
               <div class="article-img-container" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
               </div>
               <p class="article-excerpt"><?php the_excerpt(); ?></p>
