@@ -7,10 +7,6 @@
 <!-- Social Icons -->
 <?php get_template_part('template-parts/content', 'social'); ?>
 
-<section class="page-heading">
-  <h1><?php echo get_bloginfo('name'); ?></h1>
-</section>
-
 <main class="container home-main">
   <div class="row">
     <section class="home-articles col-12 col-md-8">

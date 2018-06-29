@@ -15,8 +15,14 @@
       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     ?>
     <div class="logo-container">
-      <img src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+      <div class="img-container text-center">
+        <img src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+      </div>
+      <div class="page-heading">
+        <h1><?php echo get_bloginfo('name'); ?></h1>
+      </div>
     </div>
+
     <header class="header" id="header">
       <!-- Hamburger icon (only visible on Mobile) -->
       <i class="visible-xs header-icon icon-open fas fa-bars fa-2x" id="header-open"></i>

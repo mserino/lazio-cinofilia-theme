@@ -88,12 +88,15 @@ a.link-unstylef:active {
 .logo-container {
   display: flex;
   justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 20px 0;
   background-color: #FFFFFF;
 }
 
 .logo-container img {
-  max-height: 250px;
+  max-height: 150px;
 }
 
 .header {
@@ -200,13 +203,11 @@ a.link-unstylef:active {
 
 .home-main {
   padding: 40px 10px;
-  padding-top: 0;
 }
 
 @media (min-width: 768px) {
   .home-main {
     padding: 40px 0;
-    padding-top: 0;
   }
 }
 
@@ -368,7 +369,7 @@ a.link-unstylef:active {
 }
 
 .page-heading {
-  padding: 50px 0;
+  /* padding: 50px 0; */
   text-align: center;
 }
 
