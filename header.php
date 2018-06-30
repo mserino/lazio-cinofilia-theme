@@ -18,7 +18,7 @@
       <div class="img-container text-center">
         <img src="<?php echo $image[0]; ?>" alt="<?php echo get_bloginfo('name'); ?>">
       </div>
-      <div class="page-heading">
+      <div class="page-title">
         <h1><?php echo get_bloginfo('name'); ?></h1>
       </div>
     </div>

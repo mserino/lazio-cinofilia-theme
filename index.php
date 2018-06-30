@@ -25,7 +25,7 @@
               <div class="article-img-container" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
               </div>
               <p class="article-excerpt"><?php the_excerpt(); ?></p>
-              <a href="<?php the_permalink(); ?>" class="link">Leggi tutto</a>
+              <a href="<?php the_permalink(); ?>" title="Permanent link to <?php the_title_attribute(); ?>" class="link">Leggi tutto</a>
             </li>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
@@ -38,7 +38,7 @@
     </section>
 
     <!-- Sidebar -->
-    <?php get_sidebar(); ?>
+    <?php get_sidebar('home'); ?>
   </div>
 </main>
 

@@ -211,7 +211,8 @@ a.link-unstylef:active {
   }
 }
 
-.articles-list {
+.articles-list,
+.news-articles-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -238,6 +239,21 @@ a.link-unstylef:active {
 .article-excerpt,
 .article-content {
   text-align: justify;
+}
+
+.news-article {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.news-article-img-container {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-article-details p {
+  font-size: 12px;
 }
 
 .aside-section {
@@ -369,7 +385,11 @@ a.link-unstylef:active {
 }
 
 .page-heading {
-  /* padding: 50px 0; */
+  padding-top: 50px;
+  text-align: center;
+}
+
+.page-title {
   text-align: center;
 }
 
