@@ -10,9 +10,9 @@
       <?php while($social_loop->have_posts()) : $social_loop->the_post(); ?>
         <?php
           $social_icon_class = get_field('social_icon_class');
-          $social_url = get_field('social_url');
+          $social_icon_url = get_field('social_url');
         ?>
-        <a href="<?php echo $social_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
+        <a href="<?php echo $social_icon_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
           <i class="social-icon <?php echo $social_icon_class;?> fa-2x"></i>
         </a>
       <?php endwhile; wp_reset_query(); ?>
