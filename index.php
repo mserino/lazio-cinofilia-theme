@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<section class="slideshow">
-  <?php echo do_shortcode( '[recent_post_slider design="design-3" show_category_name="false"]' ); ?>
-</section>
-
 <!-- Social Icons -->
 <?php get_template_part('template-parts/content', 'social'); ?>
 
