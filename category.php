@@ -15,14 +15,16 @@
           <ul class="news-articles-list">
             <?php if (have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
-                <li class="news-article drop-shadow row">
-                  <div class="news-article-img-container col-3" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
-                  </div>
-                  <div class="news-article-details col-9">
-                    <h5><?php the_title(); ?></h5>
-                    <span class="article-date label"><?php the_time('j F Y'); ?></span>
-                    <p class="article-excerpt news-article-excerpt"><?php the_excerpt(); ?></p>
-                    <a href="<?php the_permalink(); ?>" title="Permanent link to <?php the_title_attribute(); ?>" class="link">Leggi tutto</a>
+                <li class="news-article drop-shadow">
+                  <div class="row">
+                    <div class="news-article-img-container col-3" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+                    </div>
+                    <div class="news-article-details col-9">
+                      <h5><?php the_title(); ?></h5>
+                      <span class="article-date label"><?php the_time('j F Y'); ?></span>
+                      <p class="article-excerpt news-article-excerpt"><?php the_excerpt(); ?></p>
+                      <a href="<?php the_permalink(); ?>" title="Permanent link to <?php the_title_attribute(); ?>" class="link">Leggi tutto</a>
+                    </div>
                   </div>
                 </li>
               <?php endwhile; ?>

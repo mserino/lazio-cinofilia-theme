@@ -400,6 +400,7 @@ a.link-unstylef:active {
 .pagination {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .home-sponsors {
@@ -462,6 +463,18 @@ a.link-unstylef:active {
 
 .activity-container {
   margin-bottom: 60px;
+}
+
+.activity-list {
+  margin: 0;
+  padding: 0 10px;
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .activity-list {
+    padding: 0;
+  }
 }
 
 .activity-description {
