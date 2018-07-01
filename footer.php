@@ -21,9 +21,9 @@
           <?php while($social_footer_loop->have_posts()) : $social_footer_loop->the_post(); ?>
             <?php
               $social_icon_class = get_field('social_icon_class');
-              $social_url = get_field('social_url');
+              $social_icon_url = get_field('social_icon_url');
             ?>
-            <a href="<?php echo $social_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
+            <a href="<?php echo $social_icon_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
               <i class="footer-icon <?php echo $social_icon_class;?> fa-2x"></i>
             </a>
           <?php endwhile; wp_reset_query(); ?>

@@ -15,9 +15,9 @@
           <?php while($social_sidebar_loop->have_posts()) : $social_sidebar_loop->the_post(); ?>
             <?php
               $social_icon_class = get_field('social_icon_class');
-              $social_url = get_field('social_url');
+              $social_icon_url = get_field('social_icon_url');
             ?>
-            <a href="<?php echo $social_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
+            <a href="<?php echo $social_icon_url; ?>" target="blank" title="<?php the_title(); ?>" class="social-icon-link">
               <i class="aside-icon <?php echo $social_icon_class;?> fa-3x"></i>
             </a>
           <?php endwhile; wp_reset_query(); ?>
